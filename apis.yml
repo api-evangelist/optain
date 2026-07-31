@@ -1,8 +1,27 @@
 aid: optain
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/optain.png
 name: Optain
-description: 'Optain is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Optain (Optain Health) is a healthcare technology company delivering AI-powered
+  retinal imaging and oculomics for early, non-invasive detection of chronic disease at
+  the point of care. Its platform pairs the FDA 510(k)-cleared Resolve robotic fundus
+  camera and Eyetelligence Assure Software as a Medical Device (SaMD) with teleophthalmology
+  grading to screen for diabetic retinopathy, glaucoma, age-related macular degeneration,
+  hypertensive retinopathy and cardiovascular risk in seconds, without dilation. Rooted in
+  Australian-founded Eyetelligence (2019) and research from the Centre for Eye Research
+  Australia, Optain integrates with major EHR systems and returns ICD-10-coded reports,
+  typically same day. Backed by Insight Partners. No public developer API surface is
+  currently published.'
 url: https://raw.githubusercontent.com/api-evangelist/optain/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Artificial Intelligence
+- Medical Imaging
+- Ophthalmology
+- Retinal Screening
+- Oculomics
+- Diagnostics
+- Medical Device
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/optain-domain-security.yml
 - type: Website
   url: https://www.optainhealth.com/us/
+- type: About
+  url: https://www.optainhealth.com/about/
+- type: PrivacyPolicy
+  url: https://www.optainhealth.com/privacy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
